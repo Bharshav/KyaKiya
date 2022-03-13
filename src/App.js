@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import {Tabs,Tab} from 'react-bootstrap'
+
+//local imports
+import Today from "./components/Today/Today";
+import Modify from "./components/Modify/Modify";
+import View from "./components/View/View";
+import { useState } from "react";
 
 function App() {
+  const [key, setKey] = useState('today')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tabs
+        defaultActiveKey={key}
+        id="uncontrolled-tab-example"
+        className="mb-3"
+      >
+        <Tab eventKey="today" title="Today" defaultActiveKey>
+          <Today/>
+        </Tab>
+        <Tab eventKey="modify" title="Modify">
+          <Modify/>
+        </Tab>
+        <Tab eventKey="view" title="View">
+          <View/>
+        </Tab>
+      </Tabs>
     </div>
   );
 }
