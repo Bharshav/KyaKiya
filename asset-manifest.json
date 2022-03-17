@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/KyaKiya/static/css/main.794c5551.css",
-    "main.js": "/KyaKiya/static/js/main.b7030fb5.js",
+    "main.css": "/KyaKiya/static/css/main.70fbf7d7.css",
+    "main.js": "/KyaKiya/static/js/main.b6fd8cb1.js",
     "static/js/787.841b9d41.chunk.js": "/KyaKiya/static/js/787.841b9d41.chunk.js",
+    "static/media/task.svg": "/KyaKiya/static/media/task.85e2ff6237f2d4a569f4acfd1bc669f4.svg",
     "static/media/logo.svg": "/KyaKiya/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/KyaKiya/index.html",
-    "main.794c5551.css.map": "/KyaKiya/static/css/main.794c5551.css.map",
-    "main.b7030fb5.js.map": "/KyaKiya/static/js/main.b7030fb5.js.map",
+    "main.70fbf7d7.css.map": "/KyaKiya/static/css/main.70fbf7d7.css.map",
+    "main.b6fd8cb1.js.map": "/KyaKiya/static/js/main.b6fd8cb1.js.map",
     "787.841b9d41.chunk.js.map": "/KyaKiya/static/js/787.841b9d41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.794c5551.css",
-    "static/js/main.b7030fb5.js"
+    "static/css/main.70fbf7d7.css",
+    "static/js/main.b6fd8cb1.js"
   ]
 }
