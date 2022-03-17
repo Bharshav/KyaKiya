@@ -1,19 +1,33 @@
 import React from "react";
-import { ListGroup } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
 //local imports
 import './Today.css'
+import data from '../../testdata/test.json'
+import {ReactComponent as Tasksvg} from '../../assets/task.svg'
 
 function Today() {
   return (
     <div className="todayview">
-      <ListGroup>
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-      </ListGroup>
+      
+        {data.tasks.map((task)=>
+          <Card style={{ width: '18rem', padding:'1rem' }}>
+            <Tasksvg  className="tasksvg"/>
+
+              
+          <Card.Body>
+            <Card.Title>Card Title</Card.Title>
+            <Card.Text>
+              Some quick example text to build on the card title and make up the bulk of
+              the card's content.
+            </Card.Text>
+            <Button variant="primary">Mark as done</Button>
+          </Card.Body>
+        </Card>
+        
+        )}
+        
+      
     </div>
   );
 }

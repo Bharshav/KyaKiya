@@ -1,5 +1,9 @@
 .todayview{
-    width: 50%;
-    min-width: 500px;
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tasksvg{
+    width: 100%;
+    height: auto;
 }
