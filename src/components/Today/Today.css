@@ -1,9 +1,20 @@
 .todayview{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .tasksvg{
     width: 100%;
     height: auto;
+}
+
+.editontoday{
+    font-size: 14px;
+}
+
+.actionsontoday{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
